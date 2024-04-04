@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "FARM_ID": 1,
+        "NAME": "Montana",
+        "STATE": "WA",
+        "ADDRESS": "8720 Russell Road",
+        "ADDRESS_FR": "8720, chemin Russell",
+        "HARVEST": "avocados",
+        "IMAGE": "avocado"
+      },
+      "geoLocation": {
+        "type": "Point",
+        "coordinates": [116.6011, -34.941799]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FARM_ID": 2,
+        "NAME": "Dolce & Banana",
+        "STATE": "WA",
+        "ADDRESS": "8720 Russell Road",
+        "ADDRESS_FR": "8720, chemin Russell",
+        "HARVEST": "bananas",
+        "IMAGE": "banana"
+      },
+      "geoLocation": {
+        "type": "Point",
+        "coordinates": [114.548951, -27.362309]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FARM_ID": 3,
+        "NAME": "Dolce uva",
+        "STATE": "VIC",
+        "ADDRESS": "8720 Russell Road",
+        "ADDRESS_FR": "8720, chemin Russell",
+        "HARVEST": "grapes",
+        "IMAGE": "grape"
+      },
+      "geoLocation": {
+        "type": "Point",
+        "coordinates": [148.061657, -37.571239]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FARM_ID": 4,
+        "NAME": "Dolce pesca",
+        "STATE": "QL",
+        "ADDRESS": "8720 Russell Road",
+        "ADDRESS_FR": "8720, chemin Russell",
+        "HARVEST": "peaches",
+        "IMAGE": "peach"
+      },
+      "geoLocation": {
+        "type": "Point",
+        "coordinates": [150.588309, -30.674947]
+      }
+    }
+  ]
+}

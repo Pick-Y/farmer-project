@@ -1,0 +1,35 @@
+version: "3"
+services:
+  client:
+    stdin_open: true
+    environment:
+      - ENV=dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    depends_on:
+      - db
+    volumes:
+      - "/app/node_modules"
+      - "./:/app"
+  db:
+    container_name: postgres
+    image: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - data:/data/db
+    environment:
+      - DB_USER=postgres
+      - DB_HOST=db
+      - DB_NAME=farmers_backpackers
+      - DB_PASSWORD=password
+      - DB_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=farmers_backpackers
+volumes: 
+  data: {}
